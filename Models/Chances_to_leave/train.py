@@ -32,3 +32,20 @@ predict = pipe.predict(X_test)
 
 accuracy = accuracy_score(Y_test, predict)
 print(accuracy)
+
+sample_data = {
+    'EmployeeAge': 20,
+    'JobLevel': 5,
+    'MonthlyIncome': 80000,
+    'YearsAtCompany': 1,
+    'OverTime': 1,
+    'JobSatisfaction': 1,
+    'WorkLifeBalance': 0,
+    'TrainingHoursLastYear': 20
+}
+
+sample = pd.DataFrame([sample_data])
+
+predict_sample = pipe.predict(sample)
+
+print(predict_sample)
