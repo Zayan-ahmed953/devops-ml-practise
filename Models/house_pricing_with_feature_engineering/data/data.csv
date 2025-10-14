@@ -1,0 +1,11 @@
+AreaSqFt,Bedrooms,Bathrooms,Location,Age,HasGarage,NearbySchoolRating,Price
+1200,2,1,Suburb,10,1,8,180000
+2500,4,3,City,5,1,9,420000
+900,1,1,Rural,20,0,6,95000
+1600,3,2,Suburb,8,1,7,230000
+3100,5,4,City,2,1,10,550000
+1100,2,1,Rural,15,0,5,120000
+2000,3,2,Suburb,12,1,8,260000
+2700,4,3,City,4,1,9,470000
+1300,2,2,Suburb,10,1,7,190000
+800,1,1,Rural,25,0,5,85000
