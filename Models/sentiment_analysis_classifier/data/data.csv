@@ -1,0 +1,71 @@
+ReviewID,ReviewText,Sentiment
+1,Neither good nor bad.,Neutral
+2,Terrible experience won’t buy again.,Negative
+3,Not at all what I expected.,Negative
+4,Satisfied but not impressed.,Neutral
+5,No major complaints.,Neutral
+6,It works fine I guess.,Neutral
+7,Worst purchase ever.,Negative
+8,Wouldnt recommend this to anyone.,Negative
+9,Wouldnt recommend this to anyone.,Negative
+10,Not at all what I expected.,Negative
+11,The service was fantastic.,Positive
+12,Not at all what I expected.,Negative
+13,Exceeded my expectations!,Positive
+14,Decent experience could be better.,Neutral
+15,Item arrived broken.,Negative
+16,Mediocre performance overall.,Neutral
+17,Average product does the job.,Neutral
+18,Just fine for the price.,Neutral
+19,Extremely slow and unresponsive.,Negative
+20,Beautiful design and user-friendly.,Positive
+21,Mediocre performance overall.,Neutral
+22,Five stars definitely worth it.,Positive
+23,Fairly standard product.,Neutral
+24,Extremely slow and unresponsive.,Negative
+25,Exceeded my expectations!,Positive
+26,No major complaints.,Neutral
+27,Worst purchase ever.,Negative
+28,Poor quality and bad customer service.,Negative
+29,Average product does the job.,Neutral
+30,Satisfied but not impressed.,Neutral
+31,Beautiful design and user-friendly.,Positive
+32,Very happy with my purchase.,Positive
+33,Poor quality and bad customer service.,Negative
+34,No major complaints.,Neutral
+35,Wouldnt recommend this to anyone.,Negative
+36,Mediocre performance overall.,Neutral
+37,Really disappointed not worth the money.,Negative
+38,Five stars definitely worth it.,Positive
+39,Very happy with my purchase.,Positive
+40,Item arrived broken.,Negative
+41,Decent experience could be better.,Neutral
+42,Really disappointed not worth the money.,Negative
+43,It works fine I guess.,Neutral
+44,Exceeded my expectations!,Positive
+45,Very satisfied with the quality.,Positive
+46,Feels cheap and unreliable.,Negative
+47,Beautiful design and user-friendly.,Positive
+48,No major complaints.,Neutral
+49,Terrible experience won’t buy again.,Negative
+50,Terrible experience won’t buy again.,Negative
+51,Very satisfied with the quality.,Positive
+52,Extremely slow and unresponsive.,Negative
+53,It works fine I guess.,Neutral
+54,It works fine I guess.,Neutral
+55,Satisfied but not impressed.,Neutral
+56,Superb performance and great value.,Positive
+57,Amazing experience would recommend.,Positive
+58,Very satisfied with the quality.,Positive
+59,Extremely slow and unresponsive.,Negative
+60,Terrible experience wont buy again.,Negative
+61,Amazing experience would recommend.,Positive
+62,Just fine for the price.,Neutral
+63,Five stars definitely worth it.,Positive
+64,I absolutely loved it!,Positive
+65,Superb performance and great value.,Positive
+66,Very bad experience.,Negative
+67,Beautiful design and user-friendly.,Positive
+68,Great job team!,Positive
+69,Amazing experience would recommend.,Positive
+70,Extremely slow and unresponsive.,Negative
