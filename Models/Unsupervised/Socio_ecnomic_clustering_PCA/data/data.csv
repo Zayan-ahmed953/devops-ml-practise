@@ -1,0 +1,21 @@
+Country,GDP_per_capita,Life_Expectancy,Literacy_Rate,Internet_Usage
+Norway,75000,82,99,98
+Sweden,72000,81,99,97
+Denmark,71000,81,99,98
+Germany,60000,80,98,96
+France,58000,81,97,95
+Italy,50000,79,96,92
+Spain,48000,80,96,93
+Poland,35000,77,94,90
+Brazil,15000,75,91,83
+Argentina,17000,76,93,85
+China,20000,77,96,75
+India,8000,70,78,65
+Pakistan,7000,68,60,55
+Bangladesh,6500,69,65,58
+Nigeria,6000,65,59,50
+Kenya,6500,67,62,52
+South Africa,14000,73,92,80
+Egypt,10000,71,89,72
+Japan,65000,84,99,97
+South Korea,60000,83,99,96

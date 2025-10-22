@@ -1,0 +1,58 @@
+stages:
+  - build
+  - package
+  - upload
+
+variables:
+  IMAGE_NAME: ubuntu-custom
+  IMAGE_TAG: latest
+  TAR_FILE: "${IMAGE_NAME}_${IMAGE_TAG}.tar"
+
+# Step 1: Build Docker image
+build_image:
+  stage: build
+  image: docker:24.0.5
+  services:
+    - docker:dind         #This runs docker in docker and allows us to run docker commands in a docker container
+  script:
+    - docker info
+    # Example: build your app image (you can use your own Dockerfile)
+    - docker build -t $IMAGE_NAME:$IMAGE_TAG .
+    - docker images
+
+# Step 2: Save as tarball
+package_image:
+  stage: package
+  image: docker:24.0.5
+  services:
+    - docker:dind
+  script:
+    - docker save -o $TAR_FILE $IMAGE_NAME:$IMAGE_TAG
+    - ls -lh $TAR_FILE
+  artifacts:
+    paths:
+      - $TAR_FILE
+    expire_in: 1 week
+
+# Step 3: Push tarball to GitLab Packages (Generic Package Registry)
+upload_tarball:
+  stage: upload
+  image: curlimages/curl:latest
+  script:
+    - echo "Uploading to GitLab Package Registry..."
+    - |
+      curl --header "JOB-TOKEN: ${CI_JOB_TOKEN}" \
+           --upload-file "$TAR_FILE" \
+           "${CI_API_V4_URL}/projects/${CI_PROJECT_ID}/packages/generic/${IMAGE_NAME}/${IMAGE_TAG}/${TAR_FILE}"
+  needs:
+    - job: package_image
+  rules:
+    - if: $CI_COMMIT_BRANCH
+
+
+
+#CI_JOB_TOKEN: 🔑 Auto-generated token that authenticates your CI job with GitLab’s API. It’s created automatically by GitLab when a job starts.
+
+#CI_API_V4_URL: The base URL for GitLab’s REST API (v4). Automatically injected into every job. Default var 
+
+#CI_PROJECT_ID: The unique ID of the current project. Default var
